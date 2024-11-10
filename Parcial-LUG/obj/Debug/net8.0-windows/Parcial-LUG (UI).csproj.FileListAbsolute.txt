@@ -1,0 +1,63 @@
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).exe
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).dll.config
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).deps.json
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).runtimeconfig.json
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).pdb
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\BLL.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\DAL.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Entity.dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\BLL.pdb
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Entity.pdb
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\DAL.pdb
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).csproj.AssemblyReference.cache
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial_LUG.Form1.resources
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).csproj.GenerateResource.cache
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).AssemblyInfoInputs.cache
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).AssemblyInfo.cs
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).csproj.CoreCompileInputs.cache
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-.6CB7BA60.Up2Date
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\refint\Parcial-LUG (UI).dll
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).pdb
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).genruntimeconfig.cache
+C:\Users\martin\Desktop\PRACTICAS-LUG-EJERCICIOS\Parcial-LUG-Oficial\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\ref\Parcial-LUG (UI).dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).exe
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).dll.config
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).deps.json
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).runtimeconfig.json
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Parcial-LUG (UI).pdb
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\BLL.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\DAL.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Entity.dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\BLL.pdb
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\Entity.pdb
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\bin\Debug\net8.0-windows\DAL.pdb
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).csproj.AssemblyReference.cache
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial_LUG.Form1.resources
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).csproj.GenerateResource.cache
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).AssemblyInfoInputs.cache
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).AssemblyInfo.cs
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).csproj.CoreCompileInputs.cache
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).sourcelink.json
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-.6CB7BA60.Up2Date
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\refint\Parcial-LUG (UI).dll
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).pdb
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\Parcial-LUG (UI).genruntimeconfig.cache
+C:\Users\martin\Desktop\Itinerario11-LUG\Alonso_Martin_Oscar\1-Parcial-LUG\Parcial-LUG\obj\Debug\net8.0-windows\ref\Parcial-LUG (UI).dll
