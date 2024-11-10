@@ -25,21 +25,46 @@ namespace BLL
                 throw new ArgumentException("La fecha del partido no puede ser menor a la fecha actual.");
             }
 
-            partido.FechaRegistro = DateTime.Now;
-            partido.MarcadorLocal = 0;
-            partido.MarcadorVisitante = 0;
-
-            partidoData.AgregarPartido(partido);
+            using(TransactionScope scope = new TransactionScope())
+            {
+                try
+                {
+                    partidoData.AgregarPartido(partido);
+                    scope.Complete();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al agregar el partido: " + ex.Message);
+                }               
+            }
         }
 
         public List<Partido> ObtenerPartidos()
         {
-            return partidoData.ObtenerPartidos();
+            try
+            {
+                return partidoData.ObtenerPartidos();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener los partidos: " + ex.Message);
+            }
         }
 
         public void EliminarPartido(int idPartido)
         {
-            partidoData.EliminarPartido(idPartido);
+            using (TransactionScope scope = new TransactionScope())
+            {
+                try
+                {
+                    partidoData.EliminarPartido(idPartido);
+                    scope.Complete();
+                }            
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al eliminar el partido: " + ex.Message);
+                }
+            }
         }
 
         public void ActualizarMarcador(int idPartido, int marcadorLocal, int marcadorVisitante)
@@ -54,8 +79,18 @@ namespace BLL
             {
                 throw new ArgumentException("El marcador no puede ser menor a cero.");
             }
-
-            partidoData.ActualizarMarcador(idPartido, marcadorLocal, marcadorVisitante);
+            using (TransactionScope scope = new TransactionScope())
+            {
+                try
+                {
+                    partidoData.ActualizarMarcador(idPartido, marcadorLocal, marcadorVisitante);
+                    scope.Complete();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al actualizar el marcador" + ex.Message);
+                }
+            }               
         }
 
         public List<Deporte> ObtenerDeportes()
