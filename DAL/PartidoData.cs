@@ -18,94 +18,134 @@ namespace DAL
             {
                 string query = "INSERT INTO Partido (ID_DEPORTE, EQUIPO_LOCAL, EQUIPO_VISITANTE, FECHA_REGISTRO, FECHA_PARTIDO, MARCADOR_LOCAL, MARCADOR_VISITANTE) " +
                                "VALUES (@IdDeporte, @EquipoLocal, @EquipoVisitante, @FechaRegistro, @FechaPartido, @MarcadorLocal, @MarcadorVisitante)";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@IdDeporte", partido.IdDeporte);
-                cmd.Parameters.AddWithValue("@EquipoLocal", partido.EquipoLocal);
-                cmd.Parameters.AddWithValue("@EquipoVisitante", partido.EquipoVisitante);
-                cmd.Parameters.AddWithValue("@FechaRegistro", partido.FechaRegistro);
-                cmd.Parameters.AddWithValue("@FechaPartido", partido.FechaPartido);
-                cmd.Parameters.AddWithValue("@MarcadorLocal", partido.MarcadorLocal);
-                cmd.Parameters.AddWithValue("@MarcadorVisitante", partido.MarcadorVisitante);
-
-                connection.Open();
-                cmd.ExecuteNonQuery();
+                try
+                {
+                    using(SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@IdDeporte", partido.Deporte.IdDeporte);
+                        cmd.Parameters.AddWithValue("@EquipoLocal", partido.EquipoLocal);
+                        cmd.Parameters.AddWithValue("@EquipoVisitante", partido.EquipoVisitante);
+                        cmd.Parameters.AddWithValue("@FechaRegistro", partido.FechaRegistro);
+                        cmd.Parameters.AddWithValue("@FechaPartido", partido.FechaPartido);
+                        cmd.Parameters.AddWithValue("@MarcadorLocal", partido.MarcadorLocal);
+                        cmd.Parameters.AddWithValue("@MarcadorVisitante", partido.MarcadorVisitante);
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception("Error al agregar el partido: " + ex.Message);
+                }
             }
         }
 
         public List<Partido> ObtenerPartidos()
         {
             List<Partido> partidos = new List<Partido>();
-            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
+            string query = "SELECT * FROM Partido";
+
+            try
             {
-                string query = "SELECT * FROM Partido";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                connection.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Partido partido = new Partido
+                    using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
                     {
-                        IdPartido = (int)reader["ID_PARTIDO"],
-                        IdDeporte = (int)reader["ID_DEPORTE"],
-                        EquipoLocal = reader["EQUIPO_LOCAL"].ToString(),
-                        EquipoVisitante = reader["EQUIPO_VISITANTE"].ToString(),
-                        FechaRegistro = (DateTime)reader["FECHA_REGISTRO"],
-                        FechaPartido = (DateTime)reader["FECHA_PARTIDO"],
-                        MarcadorLocal = (int)reader["MARCADOR_LOCAL"],
-                        MarcadorVisitante = (int)reader["MARCADOR_VISITANTE"]
-                    };
-                    partidos.Add(partido);
-                }
+                         using(SqlCommand cmd = new SqlCommand(query, connection))
+                         {
+                            connection.Open();
+                            using(SqlDataReader reader = cmd.ExecuteReader())
+                            {   
+                                while (reader.Read())
+                                {                               
+                                     int idDeporte = (int)reader["ID_DEPORTE"];
+                                     Deporte deporte = ObtenerDeporte(idDeporte);
+                                     Partido partido = PartidoMapper.Map(reader, deporte);
+                                     partidos.Add(partido);                                   
+                                }
+                            }
+                         }      
+                         return partidos;
+                    }
+                    catch (SqlException ex)
+                    {
+                        throw new Exception("Error al obtener los partidos: " + ex.Message);
+                    }
             }
-            return partidos;
         }
+            
 
         public void EliminarPartido(int idPartido)
         {
-            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
+            string query = "DELETE FROM Partido WHERE ID_PARTIDO = @IdPartido";
+            try
             {
-                string query = "DELETE FROM Partido WHERE ID_PARTIDO = @IdPartido";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@IdPartido", idPartido);
-                connection.Open();
-                cmd.ExecuteNonQuery();
+                using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
+                {               
+                    using(SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@IdPartido", idPartido);
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error al eliminar el partido: " + ex.Message);
             }
         }
 
         public void ActualizarMarcador(int idPartido, int marcadorLocal, int marcadorVisitante)
         {
-            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
+            string query = "UPDATE Partido SET MARCADOR_LOCAL = @MarcadorLocal, MARCADOR_VISITANTE = @MarcadorVisitante WHERE ID_PARTIDO = @IdPartido";
+
+            try
             {
-                string query = "UPDATE Partido SET MARCADOR_LOCAL = @MarcadorLocal, MARCADOR_VISITANTE = @MarcadorVisitante WHERE ID_PARTIDO = @IdPartido";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@MarcadorLocal", marcadorLocal);
-                cmd.Parameters.AddWithValue("@MarcadorVisitante", marcadorVisitante);
-                cmd.Parameters.AddWithValue("@IdPartido", idPartido);
-                connection.Open();
-                cmd.ExecuteNonQuery();
+                using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
+                {                    
+                    using(SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@MarcadorLocal", marcadorLocal);
+                        cmd.Parameters.AddWithValue("@MarcadorVisitante", marcadorVisitante);
+                        cmd.Parameters.AddWithValue("@IdPartido", idPartido);
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error al actualizar el marcador: " + ex.Message);
             }
         }
 
         public List<Deporte> ObtenerDeportes()
         {
             List<Deporte> deportes = new List<Deporte>();
-            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
+            string query = "SELECT * FROM Deporte";
+
+            try
             {
-                string query = "SELECT * FROM Deporte";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                connection.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Deporte deporte = new Deporte
+                using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["TablaEquiposDB"].ConnectionString))
+                {                    
+                    using(SqlCommand cmd = new SqlCommand(query, connection))
                     {
-                        IdDeporte = (int)reader["ID_DEPORTE"],
-                        Descripcion = reader["DESCRIPCION"].ToString()
-                    };
-                    deportes.Add(deporte);
+                        connection.Open();
+                        using(SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                 deportes.Add(DeporteMapper.Map(reader));
+                            }
+                        }
+                    }
                 }
+                return deportes;
             }
-            return deportes;
+            catch (SqlException ex)
+            {
+                throw new Exception("Error al obtener los deportes: " + ex.Message);
+            }
         }
     }
 }
+
